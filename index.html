@@ -6,15 +6,27 @@
 <meta charset="utf-8">
 
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="js/jquery-1.12.2.min.js"></script>
+<script src="js/animation.js"></script>
 
 </head>
 <body>
 
 <header class="upper_block"></header>
 
-<video autoplay loop poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid">
+<video autoplay poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" onended="videoEnded()" onclick="videoEnded()">
 <source src="img/nature.mp4" type="video/mp4">
 </video>
+
+ <iframe 
+   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3510.0722724513803!2d153.44808100000003!3d-28.386885000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b90f10f81718185%3A0x976890f2ee368ce8!2sFIGJAM+IT+Pty+Ltd!5e0!3m2!1sen!2sau!4v1435707782546" 
+   class="bg-map" 
+   width="2300" 
+   height="800"
+   frameborder="0" 
+   style="border:0" 
+   allowfullscreen>
+ </iframe>
 
     <div id="wrapper">
             <div class="container">
